@@ -246,3 +246,28 @@ main {
     }
 
 }
+
+@media only screen and (max-width: 450px) {
+    .canvas-cont {
+        width: 100%;
+        padding: 0.125em;
+
+        .abt-header {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        canvas {
+            display: none;
+        }
+    }
+
+    .projects {
+        .proj-cont {
+            .projects-header {
+                margin: 0;
+                font-size: 3rem;
+            }
+        }
+    }
+}
