@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/e52bee4576.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a class="hover-a" href="#about">About</a>
+            <a class="hover-a" href="#projects">Projects</a>
+        </nav>
+        <div class="about-sec" id="about">
+            <div class="canvas-cont acnt box">
+                <div class="abt-header">About</div>
+                <canvas id="canva" width="500" height="200"></canvas>
+            </div>
+            <div class="info">
+                <u>
+                    <p class="sans large">Hello!</p>
+                </u>
+                <p class="sans small">
+                    I am ved, a student from Mumbai currently pursuing
+                    Electrical Engineering from VJTI.
+                </p>
+                <p class="sans small">
+                    I love exploring autonomous systems, embedded and
+                    control systems (and anything related to
+                    robotics in general :) ).
+                </p>
+                <p class="sans small">
+                    I'm also a fan of math and web-design and like to work
+                    on projects that combine the two!
+                </p>
+                <p class="sans small">
+                    Apart from all of this, I'm also a dragon ball and Bayern
+                    Munich fan!
+                </p>
+            </div>
+            <img src="" alt="">
+            <div class="reach-out">
+                <a href="https://github.com/vedjain773"><i class="fa-brands fa-github hover-a"></i></a>
+                <a href="https://x.com/vedj773"><i class="fa-brands fa-twitter hover-a"></i></a>
+                <a href="https://www.linkedin.com/in/ved-jain-17741b320/"><i class="fa-brands fa-linkedin hover-a"></i></a>
+                <a href="mailto:vedjain773@gmail.com"><i class="fa-solid fa-envelope hover-a"></i></a>
+            </div>
+        </div>
+    </main>
+    <div class="projects" id="projects">
+        <div class="proj-cont">
+            <div class="canvas-cont box">
+                <div class="projects-header">Projects</div>
+                <canvas id="canvp" width="500" height="200"></canvas>
+            </div>
+            <div class="plist">
+                <div class="pitem box">
+                    <div class="title">Echocore</div>
+                    <div class="desc sans">
+                        This project demonstrates the potential of Field-Programmable
+                        Gate Arrays (FPGAs) by running two very different and complex
+                        workloads simultaneously on a single chip: a 16-QAM wireless
+                        communication pipeline and a portable Ultrasound Point-of-Care
+                        (POC) diagnostic system
+                    </div>
+                    <div class="tags">
+                        <span class="hover-span">[Verilog]</span>
+                        <span class="hover-span">[FPGA]</span>
+                    </div>
+                    <a href="https://github.com/cupx0j0e/EchoCore">
+                    <button class="box">
+                        <i class="fa-brands fa-github"></i>
+                        Project Repo
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
