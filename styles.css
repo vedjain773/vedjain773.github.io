@@ -15,6 +15,11 @@
     --small: 18px;
 }
 
+::selection {
+    color: var(--lavender-blush);
+    background-color: var(--imperial-red);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,6 +43,7 @@ main {
     background-image: url("./assets/images/tsunami_blue.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
 
     min-height: 100dvh;
     display: flex;
@@ -81,7 +87,7 @@ main {
 
     .info {
         align-content: center;
-        background-color: rgba(237, 227, 228, 0.35);
+        background-color: rgba(237, 227, 228, 0.5);
 
         p {
             margin: 0.5em 1.25rem;
