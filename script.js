@@ -1,24 +1,31 @@
-var c = document.getElementById('canva');
-var $ = c.getContext('2d');
+var c = document.getElementById("canva");
+var $ = c.getContext("2d");
 
 function revolve() {
-    $.clearRect(0, 0, 500, 200);
+  $.clearRect(0, 0, 500, 200);
 
-    $.beginPath();
-    $.arc(250, 100, 50, 0, Math.PI * 2, true);
-    $.fillStyle = "#fb3640ff";
-    $.fill();
+  $.beginPath();
+  $.arc(250, 100, 50, 0, Math.PI * 2, true);
+  $.fillStyle = "#fb3640ff";
+  $.fill();
 
-    const time = new Date();
-    const t = time.getSeconds() + time.getMilliseconds() / 1000;
-    const angle = 2 * t * (Math.PI / 30);
+  const time = new Date();
+  const t = time.getSeconds() + time.getMilliseconds() / 1000;
+  const angle = 2 * t * (Math.PI / 30);
 
-    $.beginPath();
-    $.arc(250 + 80 * Math.cos(angle), 100 + 80 * Math.sin(angle), 15, 0, Math.PI * 2, true);
-    $.lineWidth = 1;   
-    $.stroke();
+  $.beginPath();
+  $.arc(
+    250 + 80 * Math.cos(angle),
+    100 + 80 * Math.sin(angle),
+    15,
+    0,
+    Math.PI * 2,
+    true,
+  );
+  $.lineWidth = 1;
+  $.stroke();
 
-    window.requestAnimationFrame(revolve);
+  window.requestAnimationFrame(revolve);
 }
 
 revolve();
@@ -27,12 +34,12 @@ var cp = document.getElementById("canvp");
 var ctx = cp.getContext("2d");
 
 const points = [
-  { x: 80,  y: 60,  vx: 0.3, vy: 0.2 },
+  { x: 80, y: 60, vx: 0.3, vy: 0.2 },
   { x: 200, y: 100, vx: -0.25, vy: 0.15 },
-  { x: 320, y: 70,  vx: 0.2, vy: -0.3 },
+  { x: 320, y: 70, vx: 0.2, vy: -0.3 },
   { x: 400, y: 150, vx: -0.2, vy: 0.25 },
   { x: 150, y: 160, vx: 0.15, vy: -0.2 },
-  { x: 260, y: 40,  vx: -0.1, vy: 0.3 },
+  { x: 260, y: 40, vx: -0.1, vy: 0.3 },
 ];
 
 const threshold = 120;
