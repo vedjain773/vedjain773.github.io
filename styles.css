@@ -232,20 +232,20 @@ img.hover-a:hover {
 @media only screen and (max-width: 650px) {
     main {
         background-attachment: fixed;
-        background-position: top center;
+        padding-bottom: 1rem;
+    }
 
-        .canvas-cont {
-            width: 100%;
-            padding: 0.125em;
+    .canvas-cont {
+        width: 100%;
+        padding: 0.125em;
 
-            .abt-header {
-                margin: 0;
-                font-size: 3.5rem;
-            }
+        .abt-header {
+            margin: 0;
+            font-size: 3.5rem;
+        }
 
-            canvas {
-                display: none;
-            }
+        canvas {
+            display: none;
         }
     }
 
@@ -274,20 +274,20 @@ img.hover-a:hover {
 @media only screen and (max-width: 450px) {
     main {
         background-attachment: fixed;
-        background-position: top center;
+        padding-bottom: 1rem;
+    }
 
-        .canvas-cont {
-            width: 100%;
-            padding: 0.125em;
+    .canvas-cont {
+        width: 100%;
+        padding: 0.125em;
 
-            .abt-header {
-                margin: 0;
-                font-size: 3rem;
-            }
+        .abt-header {
+            margin: 0;
+            font-size: 3rem;
+        }
 
-            canvas {
-                display: none;
-            }
+        canvas {
+            display: none;
         }
     }
 
