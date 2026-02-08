@@ -231,9 +231,8 @@ img.hover-a:hover {
 
 @media only screen and (max-width: 650px) {
     main {
-        background-attachment: local;
-        background-size: 100% auto;
-        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: top center;
 
         .canvas-cont {
             width: 100%;
@@ -274,9 +273,8 @@ img.hover-a:hover {
 
 @media only screen and (max-width: 450px) {
     main {
-        background-attachment: local;
-        background-size: 100% auto;
-        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: top center;
 
         .canvas-cont {
             width: 100%;
