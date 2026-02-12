@@ -271,7 +271,7 @@ img.hover-a:hover {
 
 @media only screen and (max-width: 450px) {
     main {
-        min-height: max-content;
+        min-height: fit-content;
         background-image: none;
         padding-bottom: 1rem;
 
