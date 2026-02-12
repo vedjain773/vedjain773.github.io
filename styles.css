@@ -230,11 +230,6 @@ img.hover-a:hover {
 }
 
 @media only screen and (max-width: 650px) {
-    main {
-        background-attachment: fixed;
-        padding-bottom: 1rem;
-    }
-
     .canvas-cont {
         width: 100%;
         padding: 0.125em;
@@ -259,6 +254,9 @@ img.hover-a:hover {
     }
 
     main {
+        background-attachment: fixed;
+        padding-bottom: 1rem;
+
         .about-sec {
             display: flex;
             flex-direction: column;
@@ -273,9 +271,13 @@ img.hover-a:hover {
 
 @media only screen and (max-width: 450px) {
     main {
-        min-height: fit-content;
         background-image: none;
         padding-bottom: 1rem;
+
+        .info {
+            background-color: transparent;
+            border: 1px dashed var(--imperial-red);
+        }
     }
 
     .canvas-cont {
