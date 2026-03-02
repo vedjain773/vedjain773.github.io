@@ -10,6 +10,11 @@
     --floral-white: #fff8f0ff;
     --sunset: #ffcf99ff;
 
+    --deep-lavender: #dcd5e0;
+    --warm-parch: #e0dbd0;
+    --sage-green: #d5e0db;
+    --muted-rose: #e0d5d8;
+
     --large: 22px;
     --med: 20px;
     --small: 18px;
@@ -142,8 +147,10 @@ main {
     }
 
     .plist {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        row-gap: 1rem;
         margin-top: 1.25rem;
 
         .pitem {
@@ -158,6 +165,7 @@ main {
             }
 
             .desc {
+                flex: 1;
                 line-height: 1.2;
             }
 
@@ -206,6 +214,18 @@ main {
 
 .active {
     color: var(--imperial-red);
+}
+
+.sage-green {
+    background-color: var(--sage-green);
+}
+
+.warm-parch {
+    background-color: var(--warm-parch);
+}
+
+.muted-rose {
+    background-color: var(--muted-rose);
 }
 
 .box {
