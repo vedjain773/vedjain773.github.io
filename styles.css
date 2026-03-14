@@ -162,6 +162,8 @@ main {
 
             .title {
                 font-size: 1.85rem;
+                border-bottom: 1px solid var(--licorice);
+                padding-bottom: 0.5rem;
             }
 
             .desc {
