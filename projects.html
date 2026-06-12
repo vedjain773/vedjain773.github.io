@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects — Ved</title>
+        <link rel="stylesheet" href="projects.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/e52bee4576.js" crossorigin="anonymous"></script>
+        <script src="script_projects.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <a class="hover-a" href="index.html">About</a>
+            <a class="hover-a active" href="#projects">Projects</a>
+        </nav>
+
+        <div class="projects-page" id="projects">
+            <div class="proj-cont">
+
+                <div class="canvas-cont box">
+                    <div class="projects-header">Projects</div>
+                    <canvas id="canvp" width="500" height="200"></canvas>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="main">Main Projects</button>
+                    <button class="tab-btn" data-tab="adventures">Coding Adventures</button>
+                </div>
+
+                <div class="tab-content active" id="tab-main">
+                    <div class="plist">
+                        <div class="pitem box warm-parch">
+                            <div class="title">Echocore</div>
+                            <div class="desc sans">
+                                Demonstrates the potential of FPGAs by running two very different workloads simultaneously on a single chip: a 16-QAM wireless communication pipeline and a portable Ultrasound Point-of-Care (POC) diagnostic system.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[Verilog]</span>
+                                <span class="hover-span">[FPGA]</span>
+                            </div>
+                            <a href="https://github.com/cupx0j0e/EchoCore" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    Project Repo
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="pitem box sage-green">
+                            <div class="title">TinyNN</div>
+                            <div class="desc sans">
+                                A from-scratch implementation of a fully connected neural network written in C++, using Eigen for linear algebra with an emphasis on model configuration and customisation.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[C++]</span>
+                                <span class="hover-span">[ML]</span>
+                            </div>
+                            <a href="https://github.com/vedjain773/tinyNN" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    Project Repo
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="pitem box muted-rose">
+                            <div class="title">Quark</div>
+                            <div class="desc sans">
+                                A small compiler for a restricted subset of the C language, written in C++ and targeting LLVM IR.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[C++]</span>
+                                <span class="hover-span">[Compiler]</span>
+                            </div>
+                            <a href="https://github.com/vedjain773/quark" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    Project Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coding Adventures Tab -->
+                <div class="tab-content" id="tab-adventures">
+                    <div class="plist adventures-list">
+                        <div class="pitem box deep-lav">
+                            <div class="title">Illumina</div>
+                            <div class="desc sans">
+                                A simple ray tracer built in C++ using Raylib for visualization, largely following the concepts and structure from the "Ray Tracing in One Weekend" series by Peter Shirley.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[C++]</span>
+                                <span class="hover-span">[Raylib]</span>
+                            </div>
+                            <a href="https://github.com/vedjain773/Illumina" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    View Code
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="pitem box warm-parch">
+                            <div class="title">Prism</div>
+                            <div class="desc sans">
+                                A GPU-rendered music visualizer built in C, inspired by cava.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[C]</span>
+                                <span class="hover-span">[Raylib]</span>
+                            </div>
+                            <a href="https://github.com/vedjain773/Prism" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    View Code
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.dataset.tab;
+
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    document.getElementById('tab-' + target).classList.add('active');
+                });
+            });
+        </script>
+    </body>
+</html>
