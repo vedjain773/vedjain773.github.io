@@ -11,6 +11,7 @@
         <script src="script_projects.js" defer></script>
     </head>
     <body>
+        <canvas id="bg"></canvas>
         <nav>
             <a class="hover-a" href="index.html">About</a>
             <a class="hover-a active" href="#projects">Projects</a>
@@ -31,7 +32,7 @@
 
                 <div class="tab-content active" id="tab-main">
                     <div class="plist">
-                        <div class="pitem box warm-parch">
+                        <div class="pitem box">
                             <div class="title">Echocore</div>
                             <div class="desc sans">
                                 Demonstrates the potential of FPGAs by running two very different workloads simultaneously on a single chip: a 16-QAM wireless communication pipeline and a portable Ultrasound Point-of-Care (POC) diagnostic system.
@@ -48,7 +49,7 @@
                             </a>
                         </div>
 
-                        <div class="pitem box sage-green">
+                        <div class="pitem box">
                             <div class="title">TinyNN</div>
                             <div class="desc sans">
                                 A from-scratch implementation of a fully connected neural network written in C++, using Eigen for linear algebra with an emphasis on model configuration and customisation.
@@ -65,14 +66,14 @@
                             </a>
                         </div>
 
-                        <div class="pitem box muted-rose">
+                        <div class="pitem box">
                             <div class="title">Quark</div>
                             <div class="desc sans">
                                 A small compiler for a restricted subset of the C language, written in C++ and targeting LLVM IR.
                             </div>
                             <div class="tags">
                                 <span class="hover-span">[C++]</span>
-                                <span class="hover-span">[Compiler]</span>
+                                <span class="hover-span">[Compilers]</span>
                             </div>
                             <a href="https://github.com/vedjain773/quark" target="_blank">
                                 <button class="box">
@@ -81,16 +82,34 @@
                                 </button>
                             </a>
                         </div>
+
+                        <div class="pitem box">
+                            <div class="title">z-fft</div>
+                            <div class="desc sans">
+                                A fast, lightweight Fast Fourier Transform (FFT) library written in Zig providing efficient implementations of the DFT and FFT.
+                            </div>
+                            <div class="tags">
+                                <span class="hover-span">[Zig]</span>
+                                <span class="hover-span">[Math]</span>
+                            </div>
+                            <a href="https://github.com/vedjain773/z-fft" target="_blank">
+                                <button class="box">
+                                    <i class="fa-brands fa-github"></i>
+                                    Project Repo
+                                </button>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Coding Adventures Tab -->
                 <div class="tab-content" id="tab-adventures">
                     <div class="plist adventures-list">
-                        <div class="pitem box deep-lav">
+                        <div class="pitem box">
                             <div class="title">Illumina</div>
                             <div class="desc sans">
-                                A simple ray tracer built in C++ using Raylib for visualization, largely following the concepts and structure from the "Ray Tracing in One Weekend" series by Peter Shirley.
+                                A simple ray tracer built in C++ using Raylib for visualization, following the concepts and structure from the "Ray Tracing in One Weekend" series.
                             </div>
                             <div class="tags">
                                 <span class="hover-span">[C++]</span>
@@ -104,7 +123,7 @@
                             </a>
                         </div>
 
-                        <div class="pitem box warm-parch">
+                        <div class="pitem box">
                             <div class="title">Prism</div>
                             <div class="desc sans">
                                 A GPU-rendered music visualizer built in C, inspired by cava.

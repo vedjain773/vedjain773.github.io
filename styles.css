@@ -152,18 +152,6 @@ main {
     color: var(--imperial-red);
 }
 
-.sage-green {
-    background-color: var(--sage-green);
-}
-
-.warm-parch {
-    background-color: var(--warm-parch);
-}
-
-.muted-rose {
-    background-color: var(--muted-rose);
-}
-
 .box {
     box-shadow:
         1px 1px var(--licorice),
